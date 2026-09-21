@@ -28,34 +28,38 @@ Experience the live 3D globe directly in your browser:
 ## 🛠️ Tech Stack
 
 ### Core Framework & Build Tooling
-| Technology | Version | Purpose |
-| :--- | :--- | :--- |
-| **[React](https://react.dev/)** | `^19.2.0` | UI architecture and component state management |
-| **[TypeScript](https://www.typescriptlang.org/)** | `~5.9.3` | Type safety, matrix manipulation interfaces, and contracts |
-| **[Vite](https://vite.dev/)** | `^7.3.1` | Next-generation frontend bundler with lightning-fast HMR |
-| **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)** | `^4.2.2` | Ultra-fast SWC compiler for React Fast Refresh |
+
+| Technology                                                                      | Version   | Purpose                                                    |
+| :------------------------------------------------------------------------------ | :-------- | :--------------------------------------------------------- |
+| **[React](https://react.dev/)**                                                 | `^19.2.0` | UI architecture and component state management             |
+| **[TypeScript](https://www.typescriptlang.org/)**                               | `~5.9.3`  | Type safety, matrix manipulation interfaces, and contracts |
+| **[Vite](https://vite.dev/)**                                                   | `^7.3.1`  | Next-generation frontend bundler with lightning-fast HMR   |
+| **[@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc)** | `^4.2.2`  | Ultra-fast SWC compiler for React Fast Refresh             |
 
 ### 3D Graphics & Visualization
-| Technology | Version | Purpose |
-| :--- | :--- | :--- |
-| **[Three.js](https://threejs.org/)** | `^0.183.1` | WebGL 3D scene graph, math primitives, and renderer |
-| **[@react-three/fiber](https://r3f.docs.pmnd.rs/)** | `^9.5.0` | Declarative Three.js scene management inside React |
-| **[@react-three/drei](https://github.com/pmndrs/drei)** | `^10.7.7` | Camera controls (`OrbitControls`) and R3F ecosystem helpers |
-| **[three-globe](https://github.com/vasturiano/three-globe)** | `^2.45.0` | Geo-projected spherical visualizations, arcs, and rings |
-| **[three-stdlib](https://github.com/pmndrs/three-stdlib)** | `^2.36.1` | Three.js shader and utility extensions |
+
+| Technology                                                   | Version    | Purpose                                                     |
+| :----------------------------------------------------------- | :--------- | :---------------------------------------------------------- |
+| **[Three.js](https://threejs.org/)**                         | `^0.183.1` | WebGL 3D scene graph, math primitives, and renderer         |
+| **[@react-three/fiber](https://r3f.docs.pmnd.rs/)**          | `^9.5.0`   | Declarative Three.js scene management inside React          |
+| **[@react-three/drei](https://github.com/pmndrs/drei)**      | `^10.7.7`  | Camera controls (`OrbitControls`) and R3F ecosystem helpers |
+| **[three-globe](https://github.com/vasturiano/three-globe)** | `^2.45.0`  | Geo-projected spherical visualizations, arcs, and rings     |
+| **[three-stdlib](https://github.com/pmndrs/three-stdlib)**   | `^2.36.1`  | Three.js shader and utility extensions                      |
 
 ### Geospatial Math & Offline Pipeline
-| Technology | Version | Purpose |
-| :--- | :--- | :--- |
-| **[Sharp](https://sharp.pixelplumbing.com/)** | `^0.34.5` | Fast Node.js image processing to sample Earth landmask rasters |
-| **[D3-Geo](https://d3js.org/d3-geo)** | `^3.1.1` | Spherical projections and spherical polygon contains tests |
-| **Fibonacci Sphere Distribution** | Custom Math | Generates uniform dot distributions across spherical coordinates |
+
+| Technology                                    | Version     | Purpose                                                          |
+| :-------------------------------------------- | :---------- | :--------------------------------------------------------------- |
+| **[Sharp](https://sharp.pixelplumbing.com/)** | `^0.34.5`   | Fast Node.js image processing to sample Earth landmask rasters   |
+| **[D3-Geo](https://d3js.org/d3-geo)**         | `^3.1.1`    | Spherical projections and spherical polygon contains tests       |
+| **Fibonacci Sphere Distribution**             | Custom Math | Generates uniform dot distributions across spherical coordinates |
 
 ### Styling & Animation
-| Technology | Version | Purpose |
-| :--- | :--- | :--- |
-| **[Tailwind CSS](https://tailwindcss.com/)** | `^4.2.1` | Modern zero-runtime CSS utility styling via `@tailwindcss/vite` |
-| **[GSAP](https://gsap.com/)** | `^3.14.2` | High-performance tweening and timing curves |
+
+| Technology                                   | Version   | Purpose                                                         |
+| :------------------------------------------- | :-------- | :-------------------------------------------------------------- |
+| **[Tailwind CSS](https://tailwindcss.com/)** | `^4.2.1`  | Modern zero-runtime CSS utility styling via `@tailwindcss/vite` |
+| **[GSAP](https://gsap.com/)**                | `^3.14.2` | High-performance tweening and timing curves                     |
 
 ---
 
@@ -93,12 +97,14 @@ globe/
 ### Installation
 
 1. **Clone repository:**
+
    ```bash
    git clone https://github.com/codemacrocode/threejs-3D-globe.git
    cd threejs-3D-globe
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    # or
@@ -115,13 +121,13 @@ globe/
 
 ## ⚙️ Available Scripts
 
-| Command | Action |
-| :--- | :--- |
-| `npm run dev` | Starts Vite local development server with Hot Module Replacement |
-| `npm run build` | Type-checks via `tsc -b` and compiles optimized production build to `dist/` |
-| `npm run preview` | Locally serves the production build for testing |
-| `npm run lint` | Runs ESLint to check code quality and formatting |
-| `node scripts/generate.js` | Re-generates `validPoints.json` by sampling `landmask.jpg` |
+| Command                    | Action                                                                      |
+| :------------------------- | :-------------------------------------------------------------------------- |
+| `npm run dev`              | Starts Vite local development server with Hot Module Replacement            |
+| `npm run build`            | Type-checks via `tsc -b` and compiles optimized production build to `dist/` |
+| `npm run preview`          | Locally serves the production build for testing                             |
+| `npm run lint`             | Runs ESLint to check code quality and formatting                            |
+| `node scripts/generate.js` | Re-generates `validPoints.json` by sampling `landmask.jpg`                  |
 
 ---
 
